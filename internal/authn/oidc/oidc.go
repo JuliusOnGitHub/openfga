@@ -136,7 +136,7 @@ func (oidc *RemoteOidcAuthenticator) Authenticate(requestContext context.Context
 		}
 
 		if !ok {
-			return nil, errInvalidClaims
+			return nil, errInvalidRequiredClaim
 		}
 	}
 
